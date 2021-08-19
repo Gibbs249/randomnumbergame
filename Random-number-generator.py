@@ -45,10 +45,10 @@ round()
 
 # While loop to offer another round or end the program.
 while tries != 0:
-    tries = random.randint(3, 7)
     print('Type Y for yes and N for no. Then hit Enter.')
     again = input()
     if again.upper() == 'Y':
+        tries = random.randint(3, 7)
         round()
     elif again.upper() == 'N':
         print('You are free to exit the game, thank you for playing!')
@@ -56,4 +56,3 @@ while tries != 0:
     else:
         print('That is not a valid input.')
         continue
-        
